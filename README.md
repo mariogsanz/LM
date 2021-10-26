@@ -24,6 +24,7 @@ darle formato a los encabezados mediante un programa de procesamientos de textos
 
 - Una vez tenga el formato adecuado mediante word entonces se te pide
 desarrollarlo en html
+
  ~~~
 Título principal que resume la idea general del escrito
 
@@ -60,3 +61,25 @@ Conclusiones
 Párrafo de 30 palabras con la síntesis de las ideas desarrolladas.
 
 Párrafo de 20 palabras de despedida.
+~~~~
+
+A7A. ***T2_A7A_CorrigeErroresHTML.html***. Corrige los errores en el .html que se facilita.
+
+A7B. ***T2_A7B_Parrafos.html***. Escribir dentro de la web, separado por líneas horizontales:
+
+- Nombre 
+- correo del centro
+- fecha
+- videojuego/libro/deporte favorito.
+
+A8. ***T2_A8_Formateo.html***. Haz un documento en HTML que siga el mismo formato que la
+imagen dada.
+
+Modificar el texto, e incluir formatos
+especiales: negrita, texto importante, cursiva, enfatizado, marcado, texto más pequeño, texto
+eliminado, insertado, subíndice, superíndice...
+
+Haz un documento en HTML que siga el mismo formato que la
+imagen dada.
+
+A11.***T2_A11_EtiquetasTexto.html*** Formatear la imagen que se adjunta.

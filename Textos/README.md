@@ -1,5 +1,4 @@
-# Tema 2
-## Ejercicios
+# EJERCICIOS TEXTOS
 
 A1. Indica que "***T2_A1_HTML.html***" está en español y con dirección de lectura de derecha a izquierda. Observa el resultado y después deja la dirección definitiva en izquierda a derecha.
 

@@ -1,5 +1,7 @@
 # LENGUAJE DE MARCAS
 
-## [Ejercicios Textos][Tema 2]
+## [Ejercicios Textos][Textos]
+## [Ejercicios Enlaces][Enlaces]
 
-[Tema 2]: https://github.com/mariogsanz/LM/tree/master/T2
+[Textos]: https://github.com/mariogsanz/LM/tree/master/Textos
+[Enlaces]: http://github.com/mariogsanz/LM/tree/master/Enlaces

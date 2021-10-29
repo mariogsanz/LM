@@ -2,6 +2,8 @@
 
 ## [Ejercicios Textos][Textos]
 ## [Ejercicios Enlaces][Enlaces]
+## [Ejercicios Listas][Listas]
 
 [Textos]: https://github.com/mariogsanz/LM/tree/master/Textos
-[Enlaces]: http://github.com/mariogsanz/LM/tree/master/Enlaces
+[Enlaces]: https://github.com/mariogsanz/LM/tree/master/Enlaces
+[Listas]: https://github.com/mariogsanz/LM/tree/master/Listas

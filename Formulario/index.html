@@ -7,8 +7,8 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="https://www.google.es" method="get">
-        <input type="search" name="" id="Busqueda" required>
+    <form action="https://www.google.es/search?q=" method="post">
+        <input type="search" name="hola" placeholder="Introduce tu nombre" id="Busqueda" required>
         <input type="submit" value="Input">
         <br>
         <label for="rojo">Rojo</label>
@@ -20,6 +20,13 @@
         <label for="azul">Azul</label>
         <input type="radio" name="" id="azul">
         <br>
+        <select name="provincia" id="provincia" size="5">
+            <option value="Toledo">To</option>
+            <option value="Toledo">CD</option>
+            <option value="Toledo">C</option>
+            <option value="Toledo">Gu</option>
+            <option value="Toledo">Al</option>
+        </select>
     </form>
 </body>
 </html>

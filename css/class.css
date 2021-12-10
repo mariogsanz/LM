@@ -1,0 +1,19 @@
+body{
+    background-image: url("../img/madrid1.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+}
+
+#titulo{
+    color: tomato;
+}
+
+p.texto{
+    color: blue;
+}
+
+p.especial{
+    color: green;
+}
+

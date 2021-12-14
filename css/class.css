@@ -9,6 +9,10 @@ body{
     color: tomato;
 }
 
+p{
+    margin: 100px;
+}
+
 p.texto{
     color: blue;
 }

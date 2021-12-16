@@ -2,6 +2,37 @@ h1,p{
     margin-left: 30%;
 }
 
-p.borde_rojo{
-    
+#borde_rojo{
+    border: 5px solid red;
+}
+
+#borde_azul{
+    border: 3px solid blue;
+}
+
+#borde_amarillo{
+    border: 2px dotted yellow;
+}
+
+#borde_puntos{
+    border: 5px dotted;
+    border-left-color: yellow;
+    border-top-color: red;
+    border-right-color: green;
+    border-bottom-color: blue;
+}
+
+#doble_borde{
+    border: 15px double black;
+}
+
+#doble_fino{
+    border: 5px double black;
+}
+
+#borde{
+    border-left: 20px solid black;
+    border-top: 2px solid black;
+    border-right: 10px solid black;
+    border-bottom: 4px solid black;
 }

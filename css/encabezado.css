@@ -1,0 +1,28 @@
+h1{
+    margin: auto;
+    width: 300px;
+    background-color: rgb(166, 213, 234);
+    border: 20px inset rgb(132, 175, 196);
+    border-radius: 30px;
+    padding: 1%;
+}
+
+#primero{
+    padding: 25px 50px;
+    background-color: rgb(166, 213, 234);
+    border-left: 20px solid rgb(90, 138, 160);
+    border-right: 20px solid rgb(90, 138, 160);
+    border-top: 2px solid rgb(90, 138, 160);
+    border-bottom: 2px solid rgb(90, 138, 160);
+    border-radius: 5px;
+}
+
+#segundo{
+    padding: 50px;
+    background-color: rgb(166, 213, 234);
+    border-left: 20px solid rgb(90, 138, 160);
+    border-right: 20px solid rgb(90, 138, 160);
+    border-top: 2px solid rgb(90, 138, 160);
+    border-bottom: 2px solid rgb(90, 138, 160);
+    border-radius: 5px;
+}

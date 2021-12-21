@@ -1,0 +1,16 @@
+body{
+    background: #050505;
+}
+
+a:link{
+    color: aqua;
+    text-decoration: none;
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+a:hover{
+    font-size: 100px;
+}

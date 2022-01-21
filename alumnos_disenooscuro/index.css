@@ -1,0 +1,60 @@
+*{
+    color: #999;
+    background: #404347;
+    font-family: sans-serif;
+}
+
+header{
+    border-top: 1px dotted #aaa;
+    border-bottom: 1px dotted #aaa;
+}
+
+footer{
+    border-top: 1px dotted #aaa;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+article.cajaizqda{
+    display: inline-block;
+    width: 160px;
+    padding: 0px 20px 20px 5px;
+    vertical-align: top;
+}
+
+article.cajacen{
+    display: inline-block;
+    width: 250px;
+    padding: 0px 20px 35px 20px;
+    border-left: 1px dotted #aaa;
+    vertical-align: top;
+}
+
+article.cajader{
+    display: inline-block;
+    width: 450px;
+    padding: 0px 20px 20px 20px;
+    border-left: 1px dotted #aaa;
+    text-align: justify;
+}
+
+article.cajaizqda h2, article.cajacen h2, article.cajader h2{
+    border-bottom: 1px dotted #aaa;
+    padding: 10px 0px 5px 0px;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+a, a:visited, a:hover a:link{
+    color: #60C3DB;
+    text-decoration: none;
+}
+
+img{
+    border: 1px solid #999;
+}

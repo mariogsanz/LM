@@ -1,12 +1,19 @@
 *{
     color: #999;
     background: #404347;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     border-top: 1px dotted #aaa;
     border-bottom: 1px dotted #aaa;
+    padding-left: 30px;
+}
+
+header h2{
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    font-size: large;
 }
 
 footer{

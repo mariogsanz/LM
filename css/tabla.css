@@ -1,0 +1,30 @@
+body{
+    background-color: #444;
+}
+
+table{
+    width: 100%;
+    cursor: pointer;
+}
+
+th, td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    background-color: tomato;
+}
+
+tr:nth-child(odd){
+    background-color: blue;
+}
+
+tr:nth-child(even){
+    background-color: aqua;
+}
+
+th:hover, td:hover{
+    background-color: purple;
+}

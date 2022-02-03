@@ -1,0 +1,21 @@
+#primero{
+    position: relative;
+    top: 2em;
+    left: 5em;
+    background-color: rgba(99, 99, 99, 0.3);
+}
+
+#segundo{
+    position: fixed;
+    top: 40em;
+    right: 10em;
+    background-color: rgba(150, 0, 0, 0.3);   
+}
+
+#tercero{
+    position: fixed;
+    top: 10em;
+    left: 10em;
+    right: 10em;
+    background-color: rgba(0, 0, 150, 0.3);
+}

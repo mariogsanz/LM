@@ -1,0 +1,32 @@
+#primero{
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 0px 10px;
+    text-align: justify;
+    width: 75%;
+    z-index: 1;
+    position: relative;
+    box-shadow: 10px 10px 20px;
+}
+
+#segundo{
+    background: linear-gradient(blue,red,lightgreen);
+    border: 2px solid black;
+    margin-top: 1.5em;
+    width: 75%;
+    position: absolute;
+    left: 20%;
+    top: 8.5em;
+    z-index: 0;
+    box-shadow: 10px 10px;
+}
+
+#tercero{
+    background: radial-gradient(red,yellow,green);
+    border: 2px solid black;
+    margin-top: 1.5em;
+    width: 75%;
+    position: relative;
+    top: 10em;
+    box-shadow: 20px 20px 40px 20px;
+}

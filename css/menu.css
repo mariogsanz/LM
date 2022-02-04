@@ -1,0 +1,40 @@
+body{
+    background-color: #999;
+}
+
+nav{
+    height: 700px;
+    width: 20%;
+    border: 1px transparent;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.5em 0 0.5em 1em;
+}
+
+li a:visited{
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: none;
+    background-color: gold;
+    border: 1px transparent;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: aqua;
+}

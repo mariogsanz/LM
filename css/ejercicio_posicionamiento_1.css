@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(130deg,yellow,black);
+}
+
+#primero{
+    padding: 0px 40px;
+    border: 5px solid black;
+    border-radius: 200px;
+    text-align: justify;
+    background-color: blue;
+    color: white;
+    margin-right: 20em;
+    background-image: url(../img/google.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center right;
+}
+
+#segundo{
+    border: 5px solid #999;
+    border-radius: 25px;
+    text-align: justify;
+    padding: 0px 20px;
+    background-color: black;
+    color: #999;
+    margin-top: 1.5em;
+    margin-right: 35em;
+    background-image: url(../img/google.png);
+    background-size: 100px;
+    background-repeat: repeat-y;
+}
+
+#tercero{
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 0px 20px;
+    background-color: #999;
+    margin-top: 1.5em;
+    margin-right: 50em;
+    background-image: url(../img/google.png);
+    background-size: 100px;
+    background-repeat: repeat-x;
+}

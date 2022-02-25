@@ -13,10 +13,11 @@ nav a, a:active, a:visited{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-right: 25px;
     padding-left: 25px;
+    /* animation: transparencia 1.5s forwards; */
 }
 
 nav a:hover{
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     border-radius: 5px;
     padding-right: 25px;
     padding-left: 25px;
@@ -56,10 +57,44 @@ img{
 }
 /*----------------------------- MENU-------------------------------------------------------*/
 nav{
+    position: relative;
     background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
+    animation: nav_animation 1.5s forwards;
+}
+
+@keyframes nav_animation {
+    0%{
+        transition: width 1s;
+        width: 100em;
+        transform: skewX(60deg) translateX(-39.4em);
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0;
+        text-shadow: 50px 1px rgba(0,0,0,0.5);
+    }
+    70%{
+        transition: width 1s;
+        width: 860px;
+        transform: translateX(6.8em) skewX(-10deg);
+        text-shadow: 200px 1px rgba(0,0,0,0.5);
+    }
+    100%{
+        transition: width 1s;
+        width: 970px;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+    }
+}
+
+@keyframes transparencia {
+    0%{
+        color: rgba(255, 165, 0,0);
+    }
+    100%{
+        color: rgb(255, 165, 0);
+    }
 }
 
 /*----------------------------- VISOR -------------------------------------------------------*/
@@ -77,6 +112,9 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
+    position: relative;
+    animation: contenedor 1.5s forwards;
+
 }
 
 .visor#altar{
@@ -86,6 +124,24 @@ h2{
     border-radius: 5px;
 }
 
+@keyframes contenedor {
+    0%{
+        transition: width 1s, height 1s;
+        width: 860px;
+        transform: translateX(7.5em);
+        height: 280px;
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        transition: width 1s, height 1s;
+        width: 980px;
+        height: 305px;
+        opacity: 1;
+    }
+}
 .texto{
     position: relative;
     z-index: 1;
@@ -96,6 +152,16 @@ h2{
     left: 665px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    animation: texto 1.5s forwards;
+}
+
+@keyframes texto {
+    0%{
+        left: 545px;
+    }
+    100%{
+        left: 665px;
+    }
 }
 
 p{

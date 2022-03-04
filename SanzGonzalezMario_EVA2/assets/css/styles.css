@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(90deg, whitesmoke,lightgrey,gray);
     display: flex;

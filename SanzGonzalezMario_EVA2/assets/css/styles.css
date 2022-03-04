@@ -1,0 +1,149 @@
+body{
+    background: linear-gradient(90deg, whitesmoke,lightgrey,gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorPrincipal{
+    width: 960px;
+}
+
+header{
+    height: 160px;
+    background-image: url("../img/logo1.png");
+    background-repeat: no-repeat;
+}
+
+nav{
+    background-color: #eaeaea;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+ul{
+    list-style: none;
+    margin: 0.2em;
+}
+
+li{
+    display: inline-block;
+    font-size: 1.1em;
+    font-variant: small-caps;
+}
+
+nav a{
+    text-decoration: none;
+    color: #6d6868;
+    margin: 0.5em;
+}
+
+nav a:hover{
+    font-weight: bolder;
+}
+
+.contenedorImagenes{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.galeria{
+    width: 208px;
+    height: 190px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto{
+    color: #6d6868;
+    background-color: #eaeaea;
+    font-size: 1.1em;
+    text-align: justify;
+    border: 2px solid white;
+    margin: 0.5em 0;
+    padding: 0 1em;
+}
+
+.columnas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.columnas div{
+    width: 292px;
+    color: #6d6868;
+    text-align: justify;
+    display: inline-block;
+    margin: 0 1em;
+}
+
+h2{
+    font-size: 1.4em;
+    background-color: #eaeaea;
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    border: 2px solid white;
+    padding: 0.2em 1em;
+    color: #6d6868;
+}
+
+.columnas a{
+    float: right;
+    margin-right: 10px;
+    height: 23px;
+    width: 75px;
+}
+
+footer{
+    background-color: #eaeaea;
+    border: 2px solid white;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #a3a3a3;
+    text-align: center;
+}
+
+footer div{
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer img{
+    height: 26px;
+    width: 26px;
+}
+
+.principal{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: #6d6868;
+}
+
+td,th{
+    padding: 10px;
+    border: 2px solid white;
+}
+
+th{
+    font-size: 1.2em;
+    font-variant: small-caps;
+    background-color: #eaeaea;
+}
+
+.fila:hover{
+    background-color: #aaa;
+    cursor: crosshair;
+}

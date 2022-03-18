@@ -1,0 +1,6 @@
+print("Ejercicio 13 - MáximoDosNúmeros")
+print("----------------------------------")
+x = float(input("Introduce un numero real: "))
+y = float(input("Introduce otro numero real: "))
+maxNum = max(x,y)
+print("El máximo es {0:.2f}" .format(maxNum))

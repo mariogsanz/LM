@@ -1,0 +1,8 @@
+print("Ejercicio 1 - Basico")
+print("Introduzca la edad: ")
+edad = input()
+print("Introduce el sexo: ")
+sexo = input()
+print("Introduce la altura: ")
+altura = input()
+print(f'Edad: {edad}\nSexo: {sexo}\nAltura: {altura}')

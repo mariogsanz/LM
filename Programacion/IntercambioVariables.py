@@ -1,0 +1,8 @@
+print("Ejercicio 8 - Intercambio de variables")
+print("-----------------------------------------")
+print("Introduce un numero: ")
+x = float(input())
+print("Introduce otro numero: ")
+y = float(input())
+print("x = {0:.2f}\ty = {1:.2f}" .format(x,y))
+print("x = {0:.2f}\ty = {1:.2f}" .format(y,x))

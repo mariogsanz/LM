@@ -1,0 +1,2 @@
+color fondo: #F7D1CF
+color letra: #5C6884

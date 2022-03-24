@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../imagenes/fondopeque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1300px;
+    background-color: rgba(134, 134, 134, 0.8);
+    margin-top: 50px;
+    padding-top: 75px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 1200px;
+    background-color: #aaa;
+    padding: 75px 0px;
+    margin: 10px 50px 100px;
+}
+
+h1{
+    font-variant: small-caps;
+}

@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: work;
+    src: url(../fuentes/work.ttf);
+}
+
+body{
+    background-color: #333;
+}
+
+.container{
+    background-image: url("../imagenes/fondo21.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 1450px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: work;
+    color: #731600;
+    overflow: hidden;
+}
+
+h1.header{
+    padding-top: 20px;
+    font-size: 7em;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    border-top: 10px double #731600;
+    margin: 150px 40px 0 40px;
+}
+
+h2.header{
+    font-size: 3em;
+    border-bottom: 10px double #731600;
+    margin: 40px 80px 0 80px;
+    padding-bottom: 20px;
+}
+
+h1.footer{
+    font-size: 7em;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+h2.footer{
+    font-size: 5em;
+    margin: 0 auto;
+}

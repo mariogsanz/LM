@@ -3,6 +3,12 @@
     color: #5C6884;
     font-variant: small-caps;
     font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: candy;
+    src: url("../fonts/ageta-chubby-demo/Ageta\ Chubby\ Demo.otf");
 }
 
 body{
@@ -31,6 +37,12 @@ header{
     font-size: 1em;
 }
 
+h1.header{
+    font-size: 4em;
+    margin: 0;
+    font-family: candy;
+}
+
 section{
     width: 100%;
     background-color: #F7D1CF;
@@ -54,12 +66,19 @@ img{
 }
 
 .ingredients{
-    border: 1px solid black;
     margin-top: 0;
     text-align: center;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 p{
     margin: 1px;
+}
+
+footer{
+    width: 100%;
+    background-color: #F7D1CF;
+    margin: 2em;
+    text-align: right;
+    padding: 5px;
 }

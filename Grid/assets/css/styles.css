@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+/*---------- HEADER ----------*/
+body{
+    margin: 0;    
+}
+
+header{
+    background-image: url("../img/tarta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid red;
+    width: 90%;
+}
+
+a.nav{
+    text-decoration: none;
+    color: red;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+/*---------- SECTION ----------*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+h1.section{
+    color: red;
+    font-variant: small-caps;
+    border-bottom: 1px solid red;
+    width: 90%;
+}

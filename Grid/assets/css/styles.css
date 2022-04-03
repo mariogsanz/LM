@@ -8,7 +8,14 @@
 
 /*---------- HEADER ----------*/
 body{
-    margin: 0;    
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container{
+    width: 100%;
 }
 
 header{
@@ -50,7 +57,227 @@ section{
 
 h1.section{
     color: red;
+    font-size: xx-large;
     font-variant: small-caps;
     border-bottom: 1px solid red;
     width: 90%;
+    margin-bottom: 0;
+}
+
+p.section{
+    width: 90%;
+}
+
+/*---------- CARD CONTAINER ----------*/
+.cardContainer{
+    background-image: url("../img/cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.cardContainer h2{
+    color: red;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: xx-large;
+    margin-bottom: 0;
+}
+
+.cardContainer p{
+    color: white;
+    text-align: justify;
+    width: 90%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 20em;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black; 
+    margin: 3em 1em 5em 1em;  
+    padding-bottom: 1em;
+}
+
+.image{
+    width: 7em;
+    margin-top: -2em;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.card h3{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+.card p{
+    color: black;
+    text-align: center;
+}
+
+/*---------- SECTION 2 ----------*/
+.secondSection p{
+    width: 90%;
+}
+
+/*---------- FOOTER ----------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #202020;
+}
+
+div.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 90%;
+    margin-top: 1em;
+}
+
+.quienesSomos p{
+    text-align: justify;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    color: white;
+    margin-top: 1em;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.redes img{
+    width: 2em;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 1em;
+}
+
+.contacto img{
+    width: 2em;
+}
+
+.bottom{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.bottom a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+/*---------- RESPONSIVE ----------*/
+@media (min-width: 528px) {
+    /*---------- HEADER ----------*/
+    nav{
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    a.nav{
+        width: auto;
+        padding-bottom: 0.5em;
+    }
+
+    /*---------- SECTION ----------*/
+    h1.section{
+        max-width: 28em;
+    }
+
+    p.section{
+        max-width: 56em;
+    }
+
+    /*---------- CARD CONTAINER ----------*/
+    .cardContainer p{
+        max-width: 30em;
+        text-align: center;
+    }
+
+    .card{
+        width: 20em;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    .secondSection p{
+        max-width: 56em;
+    }
+
+    /*---------- FOOTER ----------*/
+    div.footer{
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 50em;
+        padding: 1em;
+    }
+
+    .quienesSomos{
+        align-items: flex-start;
+        margin: 0 1em;
+    }
+
+    .redes{
+        align-items: flex-start;
+        margin: 0 1em;
+    }
+
+    .contacto{
+        align-items: flex-start;
+        margin: 0 1em;
+    }
+
+    .bottom{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .bottom a{
+        padding: 0 1em;
+        margin: 1em 0;
+    }
+
+    .bottom .politica{
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
 }

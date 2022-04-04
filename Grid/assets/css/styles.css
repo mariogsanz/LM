@@ -196,6 +196,10 @@ div.footer{
     width: 1em;
 }
 
+.contacto p{
+    margin-top: 0;
+}
+
 .bottom{
     background-color: black;
     display: flex;

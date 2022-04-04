@@ -19,7 +19,8 @@ body{
 }
 
 header{
-    background-image: url("../img/tarta.jpg");
+    background-image: url("../img/tarta.jpg"), linear-gradient(90deg, rgba(0,0,0,0),rgba(0,0,0,0.4));
+    background-blend-mode: color;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 30em;
@@ -71,6 +72,8 @@ p.section{
 /*---------- CARD CONTAINER ----------*/
 .cardContainer{
     background-image: url("../img/cafe.jpg");
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -177,7 +180,7 @@ div.footer{
 }
 
 .redes img{
-    width: 2em;
+    width: 1em;
 }
 
 .contacto{
@@ -186,10 +189,11 @@ div.footer{
     align-items: center;
     color: white;
     margin-top: 1em;
+    width: 90%;
 }
 
 .contacto img{
-    width: 2em;
+    width: 1em;
 }
 
 .bottom{

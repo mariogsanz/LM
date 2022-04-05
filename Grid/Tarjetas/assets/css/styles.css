@@ -117,7 +117,11 @@ p.section{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px black;
+}
+
+.image img:hover{
+    box-shadow: 0 0 10px grey;
 }
 
 .card h3{

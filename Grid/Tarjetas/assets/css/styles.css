@@ -146,37 +146,36 @@ footer{
 }
 
 div.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    padding: 1em;
 }
 
 .quienesSomos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
     color: white;
-    width: 90%;
-    margin-top: 1em;
+    text-align: center;
 }
 
 .quienesSomos p{
     text-align: justify;
+    margin: 0;
 }
 
 .redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+    display: grid;
+    text-align: center;
+    gap: 1em;
     color: white;
-    margin-top: 1em;
 }
 
 .redes a{
     text-decoration: none;
     color: white;
-    margin-top: 0.5em;
+    margin: 0;
 }
 
 .redes img{
@@ -184,12 +183,11 @@ div.footer{
 }
 
 .contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    text-align: center;
     color: white;
-    margin-top: 1em;
-    width: 90%;
 }
 
 .contacto img{
@@ -197,7 +195,7 @@ div.footer{
 }
 
 .contacto p{
-    margin-top: 0;
+    margin: 0;
 }
 
 .bottom{
@@ -253,25 +251,25 @@ div.footer{
 
     /*---------- FOOTER ----------*/
     div.footer{
-        flex-direction: row;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
         max-width: 50em;
-        padding: 1em;
+        column-gap: 2em;
     }
 
     .quienesSomos{
-        align-items: flex-start;
-        margin: 0 1em;
+        text-align: justify;
+        gap: 0;
     }
 
     .redes{
-        align-items: flex-start;
-        margin: 0 1em;
+        text-align: justify;
+        gap: 0;
     }
 
     .contacto{
-        align-items: flex-start;
-        margin: 0 1em;
+        text-align: justify;
+        gap: 0;
     }
 
     .bottom{

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'PT Sans',
+    sans-serif;
+    color: #484848;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*----- HEADER -----  */
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em 1em;
+}
+
+.header input{
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*----- DESCRIBE AIRBNB -----*/
+
+.describe_airbnb h2{
+    grid-area: h2;
+}
+
+.describe_airbnb{
+    display: grid;
+    grid-template-areas: 'h2 h2 h2';
+    gap: 0.5em;
+    column-gap: 1em;
+    max-width: 1200px;
+    margin: 2em 1em;
+}
+
+.describe_containers{
+    width: 310px;
+    height: 70px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px -10px gray;
+}
+
+.describe_container_text{
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+
+/*----- PRESENTAMOS AIRBNB PLUS -----*/
+
+.airbnb_plus{
+    max-width: 1200px;
+}
+
+.airbnb_plus_content{
+    height: 300px;
+    background-image: url("../img/visor_index.jpg"),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(0, 174, 255, 0.4));
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.airbnb_plus_content p{
+    padding-top: 5em;
+    padding-left: 2em;
+}
+
+.airbnb_plus_button{
+    font-size: 0.95em;
+    font-weight: normal;
+}
+
+/*----- Alojamientos -----*/
+.alojamientos_gallery{
+    
+}
+
+.alojamientos_gallery_container{
+    width: 270px;
+}

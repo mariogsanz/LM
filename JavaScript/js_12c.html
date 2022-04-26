@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // DETERMINAMOS LAS VARIABLES
+        var num = prompt("Introduce un numero:")
+
+        // COMPROBAMOS SI ES IMPAR
+        if ((num % 2) != 0) {
+            document.write("El numero es impar.<br>")
+
+            if ((num % 3) == 0) {
+                document.write("El numero es divisible por 3<br>")
+            }
+            if ((num % 5) == 0) {
+                document.write("El numero es divisible por 5<br>")
+            }
+            if ((num % 7) == 0) {
+                document.write("El numero es divisible por 7<br>")
+            }
+        }
+    </script>
+</body>
+</html>

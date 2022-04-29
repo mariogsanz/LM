@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 20</title>
+</head>
+
+<body>
+    <script class="upper_lower">
+        // DECLARAMOS LAS VARIABLES
+        var nombre = prompt("Introduce tu nombre:", "Mario")
+
+        document.getElementById("mayusculas").innerHTML = nombre
+        document.getElementById("minusculas").innerHTML = "Tu nombre en minusculas es: " + nombre.toLowerCase()
+    </script>
+
+    <p id="mayusculas"></p>
+    <p id="minusculas"></p>
+</body>
+
+</html>

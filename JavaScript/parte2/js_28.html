@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 28</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(prompt("Introduce un numero"))
+        var n2 = Number(prompt("Introduce otro numero"))
+        var n3 = Number(prompt("Introduce otro numero"))
+        var impar = 0
+
+        if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+            document.write("No has introducido algun numero<br>")
+        } else {
+            document.write("Has introducido el " + n1 + "<br>")
+            document.write("Has introducido el " + n2 + "<br>")
+            document.write("Has introducido el " + n3 + "<br>")
+
+            if (n1%2 != 0){
+                impar++
+            }
+
+            if (n2%2 != 0){
+                impar++
+            }
+
+            if (n3%2 != 0){
+                impar++
+            }
+
+            document.write("Hay "+impar+" numeros impares<br>")
+        }
+    </script>
+</body>
+</html>

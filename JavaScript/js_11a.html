@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 11</title>
+</head>
+
+<body>
+    <h1>Calcula el mayor de dos numeros</h1>
+    <script>
+        // DECLARAMOS LAS VARIABLES
+        var num1 = prompt("Introduce un numero:")
+        var num2 = prompt("Introduce otro numero:")
+
+        // COMPROBAMOS QUE NUMERO ES MAYOR
+        if (num1 > num2) {
+            document.write("El mayor es el " + num1)
+        } else if (num2 > num1) {
+            document.write("El mayor es el " + num2)
+        } else {
+            document.write("Los numeros son iguales")
+        }
+
+        document.write("<br>")
+
+        // COMPROBAMOS CON OTRO NUMERO MAS
+        var num3 = prompt("Introduce otro numero:")
+
+        if (num1 > num2) {
+            if (num1 > num3) {
+                document.write("El mayor es el " + num1)
+            } else if (num3 > num1) {
+                document.write("El mayor es el " + num3)
+            } else {
+                document.write(num1+" y "+num2+" son iguales")
+            }
+        } else if (num2 > num1) {
+            if (num2 > num3) {
+                document.write("El mayor es el " + num2)
+            } else if (num3 > num2) {
+                document.write("El mayor es el " + num3)
+            } else {
+                document.write(num3 + " y " + num2 + " son iguales")
+            }
+        } else {
+            if (num1 > num3) {
+                document.write("El mayor es el " + num1)
+            } else if (num3 > num1) {
+                document.write("El mayor es el " + num3)
+            } else {
+                document.write(num1 + " y " + num2 + " son iguales")
+            }
+        }
+    </script>
+</body>
+
+</html>

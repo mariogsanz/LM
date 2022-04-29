@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 15</title>
+</head>
+<body>
+    <script>
+        var n = prompt("Teclea un numero real")
+        var div = prompt("Teclea otro numero real")
+
+        if (isNaN(n) || isNaN(div)){
+            document.write("Alguno de los valores tecleados no es un numero")
+        } else{
+            var c = Number(n/div)
+            document.write("Dato correcto. Cociente = "+c+"<br>")
+        }
+    </script>
+</body>
+</html>

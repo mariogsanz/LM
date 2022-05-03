@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <div>
+        <form action="" name="area" onsubmit="submitForm()">
+            <h2>Selecciona una figura</h2>
+            <input type="radio" name="figura" id="cuadrado" value="cuadrado">
+            <label for="cuadrado">Cuadrado</label><br>
+            <input type="radio" name="figura" id="rectangulo" value="rectangulo">
+            <label for="rectangulo">Rectangulo</label><br>
+            <input type="radio" name="figura" id="circulo" value="circulo">
+            <label for="circulo">Circulo</label><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset"><br>
+        </form>
+
+        <p id="area"></p>
+    </div>
+    <script>
+        
+        function areaCuadrado(){
+            var lado = Number(prompt("Introduce la longitud del lado"))
+
+            if (isNaN(lado)){
+                alert("Tienes que introducir un numero")
+            } else {
+                var area = lado**2
+                document.getElementById("area").innerHTML = "El area del cuadrado es "+ area
+            }
+        }
+
+        function areaRectangulo(){
+            var base = Number(prompt("Introduce la longitu de la base"))
+            var altura = Number(prompt("Introduce la longitud de la altura"))
+
+            if (isNaN(base) || isNaN(altura)){
+                alert("Tienes que introducir un numero")
+            } else {
+                var area = Number(base * altura)
+                document.getElementById("area").innerHTML = "El area del rectangulo es " + area
+            }
+        }
+
+        function areaCirculo(){
+            var radio = Number(prompt("Introduce la longitud del radio"))
+
+            if (isNaN(radio)) {
+                alert("Tienes que introducir un numero")
+            } else {
+                var area = Number(Math.PI*(radio**2))
+                document.getElementById("area").innerHTML = "El area del circulo es " + area
+            }
+        }
+
+        function submitForm(){
+            event.preventDefault()
+            var value = document.getElementsByName("figura")
+            
+            for (var i = 0; i < value.length; i++){
+                if(value[i].checked){
+                    switch (value[i].value) {
+                        case "cuadrado":
+                            areaCuadrado()
+                            break;
+            
+                        case "rectangulo":
+                            areaRectangulo()
+                            break;
+
+                        default:
+                            areaCirculo()
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

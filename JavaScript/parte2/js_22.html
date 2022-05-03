@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 22</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Introduce una frase", "Hola que tal")
+        var inicio = parseInt(Number(prompt("Introduce un valor de inicio")))
+        var final = parseInt(Number(prompt("Introduce un valor final")))
+
+        if (isNaN(inicio) || isNaN(final)){
+            alert("Los valores deben ser numeros")
+        } else{
+            document.write("La subcadena es \""+ frase.substring(inicio, final)+"\"")
+        }
+    </script>
+</body>
+</html>

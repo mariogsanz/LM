@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 24 a</title>
+</head>
+<body>
+    <script>
+        var year = parseInt(Number(prompt("Introduce el año")))
+        var mes = parseInt(Number(prompt("Introduce el numero de mes")))
+
+        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12){
+            document.write("El mes tiene 31 dias")
+        } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11){
+            document.write("El mes tiene 30 dias")
+        } else if (mes == 2){
+            if ((year%4 == 0 && year%100 == 0) || year%100 == 0){
+                document.write("El mes tiene 29 dias")
+            } else {
+                document.write("El mes tiene 28 dias")
+            }
+        } else {
+            alert("El mes introducido no existe")
+        }
+    </script>
+</body>
+</html>

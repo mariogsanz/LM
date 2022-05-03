@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 21 a</title>
+</head>
+
+<body>
+    <script>
+        var nombre = prompt("Introduce un nombre", "Alberto")
+
+        if (nombre.length < 6) {
+            alert("El nombre introducido debe tener una longitud de 6 como minimo")
+        } else {
+            document.write("Caracter 1: " + nombre.charAt(1) + "<br>")
+            document.write("Caracter 3: " + nombre.charAt(3) + "<br>")
+            document.write("Caracter 5: " + nombre.charAt(5) + "<br>")
+        }
+    </script>
+</body>
+
+</html>

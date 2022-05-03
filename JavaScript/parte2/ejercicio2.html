@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <h1>Ejercicio 2</h1>
+    <script>
+        var numero = Number(prompt("Introduce un numero"))
+
+        if (isNaN(numero)) {
+            alert("Debes introducir un numero")
+        } else {
+            if (numero % 2 == 0) {
+                document.write(numero + " es par.<br>")
+            }
+
+            if (numero % 3 == 0) {
+                document.write(numero + " es divisible por 3.<br>")
+            }
+
+            if (numero % 5 == 0) {
+                document.write(numero + " es divisible por 5.<br>")
+            }
+
+            if (numero % 7 == 0) {
+                document.write(numero + " es divisible por 7.<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>

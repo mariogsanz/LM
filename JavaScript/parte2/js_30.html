@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 30</title>
+</head>
+
+<body>
+    <script>
+        var menor = 0
+        var i = 0
+
+        while (i < 3) {
+            var edad = parseInt(Number(prompt("Introduce una edad")))
+
+            if (edad < 18) {
+                menor++
+            }
+
+            document.write("Has tecleado la edad: " + edad + "<br>")
+            i++
+        }
+
+        if (menor > 0) {
+            document.write("Hay menores de edad<br>")
+        } else {
+            document.write("No hay menores de edad<br>")
+        }
+
+    </script>
+</body>
+
+</html>

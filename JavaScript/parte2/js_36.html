@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 36</title>
+</head>
+<body>
+    <script>
+        var mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+
+        var n = parseInt(Number(prompt("Introduce el numero de un mes")))
+
+        if (n > mes.length || n < 1) {
+            alert("El mes introducido no existe")
+        } else {
+            document.write("El mes tecleado es: " + mes[n - 1])
+        }
+    </script>
+</body>
+</html>

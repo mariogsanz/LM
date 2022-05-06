@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        body {
+            background-color: #333333;
+            padding: 1em;
+        }
+
+        .enunciado {
+            margin-top: 1em;
+            width: 100%;
+            border: 5px solid #006699;
+            border-radius: 10px;
+            padding: 1em;
+            background-color: #00517a;
+        }
+
+        form {
+            margin-top: 1em;
+        }
+
+        input {
+            color: black;
+
+        }
+
+        p {
+            margin-top: 1em;
+        }
+
+        #submit {
+            background-color: #006699;
+            padding: 0.3em 1em;
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+
+        #mostrar_nombre {
+            margin-top: 1em;
+            background-color: #006699;
+            padding: 0.3em 1em;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function mostrarNombre() {
+            var nombre = document.getElementById("nombre").value
+
+            if (nombre != "") {
+                alert(nombre)
+            } else {
+                alert("No has metido nombre")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio JS 48</h1>
+    <div class="enunciado">
+        Acceso a los campos de un formulario. Usamos una unción para mostrar un mensaje conel valor del campo nombre al
+        hacer clic sobre el botón mostrar nombre en la página web.
+    </div>
+    <form action="" method="post">
+        <p>Nombre: <input type="text" name="nombre" id="nombre"></p>
+        <p>Curso: <input type="text" name="curso" id="curso"></p>
+        <p>Centro: <input type="text" name="centro" id="centro"></p>
+        <input type="submit" value="Submit" id="submit"><br>
+        <input type="button" value="Mostrar Nombre" id="mostrar_nombre" onclick="mostrarNombre()">
+    </form>
+</body>
+
+</html>

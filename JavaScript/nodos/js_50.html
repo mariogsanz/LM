@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        body {
+            background-color: #333333;
+            padding: 1em;
+        }
+
+        .enunciado {
+            margin-top: 1em;
+            width: 100%;
+            border: 5px solid #006699;
+            border-radius: 10px;
+            padding: 1em;
+            background-color: #00517a;
+        }
+
+        #contenido {
+            margin-top: 1em;
+            width: 100%;
+            border: 5px solid #006699;
+            border-radius: 10px;
+            padding: 1em;
+            background-color: #00517a;
+        }
+
+        button{
+            background-color: #006699;
+            margin-top: 1em;
+            padding: 0.3em 1em;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function bucle(){
+            var texto = ".\n"
+            document.getElementById("contenido").innerHTML = "Cagaste\n"
+            setInterval(() => {
+                document.getElementById("contenido").append(texto)
+            }, 1);
+        }
+
+        function cambiarContenido(){
+            var texto = "Hoy es viernes.\n"
+            document.getElementById("contenido").innerHTML = texto
+        }
+
+        function appendContent(){
+            var texto = prompt("Introduce texto a añadir", "Eeeeyyyyyyy")
+            document.getElementById("contenido").append(texto)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio 50</h1>
+    <div class="enunciado">
+        Usar el método getElementById para acceder a los objetos de una página. Utilizremos este método para acceder a
+        una caja y cambiar su contenido.
+    </div>
+    <div id="contenido">
+        Este es el contenido de la caja.
+    </div>
+    <button onclick="cambiarContenido()">Cambiar contenido</button><br>
+    <button onclick="bucle()">Bucle</button><br>
+    <button onclick="appendContent()">Añadir contenido</button>
+</body>
+
+</html>

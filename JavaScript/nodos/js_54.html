@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        body {
+            background-color: #333333;
+            padding: 1em;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .enunciado {
+            margin-top: 1em;
+            width: 100%;
+            border: 5px solid #006699;
+            border-radius: 10px;
+            padding: 1em;
+            background-color: #00517a;
+        }
+
+        button{
+            margin-top: 1em;
+            background-color: #006699;
+            padding: 0.3em 1em;
+            border-radius: 10px;
+            width: fit-content;
+        }
+    </style>
+
+    <script>
+        function cambiarColor() {
+            var div = document.getElementById("enunciado")
+            div.style.backgroundColor = "#000"
+        }
+
+        function resetColor() {
+            var div = document.getElementById("enunciado")
+            div.style.backgroundColor = "#00517a"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio 54</h1>
+    <div class="enunciado" id="enunciado">
+        Al situarnos encima de un botón se cambia el CSS de un div y al salir lo dejamos como estaba.
+    </div>
+    <button onmouseover="cambiarColor()" onmouseout="resetColor()">Pasa por encima</button>
+</body>
+
+</html>

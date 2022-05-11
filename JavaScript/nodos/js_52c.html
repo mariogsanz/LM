@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 52 C</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1em;
+        }
+
+        body{
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .enunciado{
+            background-color: #006699;
+            border: 5pt solid #00517a;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .caja{
+            background-color: pink;
+            margin-top: 20px;
+            border: 5pt solid palevioletred;
+            border-radius: 10px;
+            font-family: ;
+        }
+
+        select{
+            margin-top: 20px;
+            padding: 0.3em 1rem;
+            border-radius: 10px;
+            max-width: fit-content;
+        }
+    </style>
+    <script>
+        function changeFont(font){
+            var caja = document.querySelector(".caja")
+            if (font == "arial"){
+                caja.style.fontFamily = "Arial"
+            } else if (font == "tnr"){
+                caja.style.fontFamily = "Times New Roman"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="enunciado">
+
+    </div>
+    <div class="caja">
+        Esto es una prueba
+    </div>
+    <select name="font" id="font">
+        <option value="">Selecciona una fuente...</option>
+        <option value="arial" onmouseover="changeFont('arial')">Arial</option>
+        <option value="tnr" onclick="changeFont('tnr')">Times New Roman</option>
+        <option value="georgia">Georgia</option>
+        <option value="cambria">Cambria</option>
+        <option value="geneva">Geneva</option>
+        <option value="pacifico">Pacífico</option>
+        <option value="tolkien">Tolkien</option>
+    </select>
+</body>
+</html>

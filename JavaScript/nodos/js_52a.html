@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 52</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #fff;
+            width: 100%;
+            padding: 1em;
+
+        }
+
+        body {
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .enunciado {
+            background-color: #006699;
+            border: 5pt solid #00517a;
+            border-radius: 10pt;
+            width: fit-content;
+        }
+
+        .caja {
+            background-color: pink;
+            margin-top: 1em;
+            width: 50%;
+            border: 5pt solid palevioletred;
+            border-radius: 10pt;
+            color: black;
+        }
+
+        .caja_roja {
+            background-color: red;
+            margin-top: 1em;
+            width: 50%;
+            border: 5pt solid rgb(148, 0, 0);
+            border-radius: 10pt;
+        }
+
+        .caja_verde {
+            background-color: greenyellow;
+            margin-top: 1em;
+            width: 50%;
+            border: 5pt solid green;
+            border-radius: 10pt;
+            color: black;
+        }
+
+        .caja_azul {
+            background-color: #006699;
+            margin-top: 1em;
+            width: 50%;
+            border: 5pt solid #00517a;
+            border-radius: 10pt;
+        }
+
+        .botones {
+            display: grid;
+            grid-template-columns: repeat(3, max-content);
+            gap: 1em;
+            justify-content: center;
+            margin-top: 1em;
+        }
+
+        button {
+            width: fit-content;
+            background-color: #006699;
+            padding: 0.3em 1em;
+            border-radius: 10pt;
+        }
+    </style>
+    <script>
+        function changeColor(color) {
+            if (color == 'rojo'){
+                document.getElementById("caja").className = 'caja_roja'
+            } else if (color == 'verde'){
+                document.getElementById("caja").className = 'caja_verde'
+            } else {
+                document.getElementById("caja").className = 'caja_azul'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="enunciado">
+        Tener una división con un texto escrito y cuando haga clic en uno de los botones inferiores que cambie el color del texto.
+    </div>
+    <div class="caja" id="caja">
+        Esto es el contenido inicial de la caja.
+    </div>
+    <div class="botones">
+        <button id="rojo" onclick="changeColor('rojo')">Rojo</button>
+        <button id="verde" onclick="changeColor('verde')">Verde</button>
+        <button id="azul" onclick="changeColor('azul')">Azul</button>
+    </div>
+</body>
+
+</html>

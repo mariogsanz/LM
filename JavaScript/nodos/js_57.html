@@ -39,9 +39,11 @@
             background-color: green;
             border: 0.3em solid greenyellow;
             border-radius: 20px;
-            width: 80%;
+            width: 90%;
+            height: 90%;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-start;
             top: 50%;
             transform: translateY(-50%);
             display: none;
@@ -50,12 +52,21 @@
         .publi h3{
             max-width: fit-content;
         }
+
+        button{
+            width: fit-content;
+            padding: 0.3em 1em;
+        }
     </style>
     <script>
         function publi(){
             setTimeout(() => {
                 document.getElementById("publi").style.display = "flex"
             }, 5000);
+        }
+
+        function closePubli(){
+            document.getElementById("publi").style.display = "none"
         }
     </script>
 </head>
@@ -71,7 +82,7 @@
         <div class="img">
             <img src="../../Alumnos_Toledo/imagenes/panoramica1.jpg" alt="">
         </div>
-        <button>Cerrar</button>
+        <button onclick="closePubli()">Cerrar</button>
     </div>
 </body>
 </html>

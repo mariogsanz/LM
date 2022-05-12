@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 57</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 1em;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        body{
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .enunciado{
+            background-color: #006699;
+            border: 0.3em solid #00527a;
+            border-radius: 10px;
+        }
+
+        .caja{
+            background-color: gray;
+            border: 0.3em solid rgba(0,0,0,0.3);
+            margin-top: 20px;
+            border-radius: 10px;
+            max-width: fit-content;
+        }
+
+        .publi{
+            position: absolute;
+            background-color: green;
+            border: 0.3em solid greenyellow;
+            border-radius: 20px;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        .publi h3{
+            max-width: fit-content;
+        }
+    </style>
+    <script>
+        function publi(){
+            setTimeout(() => {
+                document.getElementById("publi").style.display = "flex"
+            }, 5000);
+        }
+    </script>
+</head>
+<body onload="publi()">
+    <div class="enunciado">
+        Utilizar la función setTimeout para establecer que se muestre un mensaje publicitario a los 5 segundos de abrur la página. La ventana debe tener un botón cerrar.
+    </div>
+    <div class="caja">
+        Se mostrará una ventana de publicidad
+    </div>
+    <div class="publi" id="publi">
+        <h3>La mejor oferta</h3>
+        <div class="img">
+            <img src="../../Alumnos_Toledo/imagenes/panoramica1.jpg" alt="">
+        </div>
+        <button>Cerrar</button>
+    </div>
+</body>
+</html>

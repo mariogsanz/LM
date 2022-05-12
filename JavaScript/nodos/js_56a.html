@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 56</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 1em;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        body {
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .enunciado {
+            background-color: #006699;
+            border: 0.3em solid #00547a;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .anuncio {
+            background-color: gray;
+            border: 0.3em solid rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button{
+            width: fit-content;
+            margin-top: 10px;
+            padding: 0.3em 1em;
+        }
+    </style>
+    <script>
+        function alerta() {
+            timeID=setTimeout(() => {
+                alert("Han pasado 5 segundos.")
+            }, 5000);
+        }
+
+        function cancelar(){
+            clearTimeout(timeID)
+        }
+
+        var timeID
+    </script>
+</head>
+
+<body onload="alerta()">
+    <div class="enunciado">
+        Utilizar la función setTimeout para establecer que se muestre un mensaje a los 5 segundos utilizando una función
+        que llame a un alert.
+    </div>
+    <div class="anuncio">
+        Se mostrará una alerta en 5 segundos.<br>
+        <button onclick="cancelar()">Cancelar</button>
+    </div>
+
+</body>
+
+</html>

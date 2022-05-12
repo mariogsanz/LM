@@ -40,14 +40,8 @@
     </style>
 
     <script>
-        function cambiarColor() {
-            var div = document.getElementById("enunciado")
-            div.style.backgroundColor = "#000"
-        }
+        function cambiarColor(div, clase){
 
-        function resetColor() {
-            var div = document.getElementById("enunciado")
-            div.style.backgroundColor = "#00517a"
         }
     </script>
 </head>
@@ -57,7 +51,7 @@
     <div class="enunciado" id="enunciado">
         Al situarnos encima de un botón se cambia el CSS de un div y al salir lo dejamos como estaba.
     </div>
-    <button onmouseover="cambiarColor()" onmouseout="resetColor()">Pasa por encima</button>
+    <button onmouseover="cambiarColor('')" onmouseout="resetColor()">Pasa por encima</button>
 </body>
 
 </html>

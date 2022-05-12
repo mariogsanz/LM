@@ -49,6 +49,15 @@
             display: none;
         }
 
+        @keyframes publi_frames {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
         .publi h3{
             max-width: fit-content;
         }
@@ -60,8 +69,9 @@
     </style>
     <script>
         function publi(){
+            var object=document.getElementById("publi")
             setTimeout(() => {
-                document.getElementById("publi").style.display = "flex"
+                object.style.cssText = "display: flex;animation: publi_frames 1s;"
             }, 5000);
         }
 

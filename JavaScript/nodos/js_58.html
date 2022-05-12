@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 58</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 1em;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        body{
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .enunciado{
+            background-color: #006699;
+            border: 0.3em solid #00527a;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .date{
+            background-color: pink;
+            border: 0.3em solid palevioletred;
+            margin-top: 20px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+    </style>
+    <script>
+        function dateTime(){
+            var object = document.getElementById("date")
+            var date = new Date()
+            var day = date.getDate()
+            var month = date.getMonth()
+            var year = date.getFullYear()
+            var hour = date.getHours()
+            var minute = date.getMinutes()
+            var seconds = date.getSeconds()
+            object.innerHTML = day+"/"+month+"/"+year+"  "+hour+":"+minute+":"+seconds
+        }
+    </script>
+</head>
+<body>
+    <div class="date">
+        Usamos JS para mostrar la fecha y la hora.
+    </div>
+    <div class="date" id="date">
+
+    </div>
+    <script>setInterval("dateTime()",1000)</script>
+</body>
+</html>

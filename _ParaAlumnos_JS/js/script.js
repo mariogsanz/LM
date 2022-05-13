@@ -47,7 +47,21 @@ function reset(){
 }
 
 // ----- EJERCICIO 4 ----- //
+var timeout
 function circunferencia(){
-    var radio = parseFloat(Number(prompt("Dame el radio:")))
-    alert(radio)
+    clearTimeout(timeout)
+    var radio = Number(prompt("Dame el radio:"))
+    
+    if (isNaN(radio)){
+        alert("El radio no es un valor numérico")
+    } else {
+        var longitud = 2*Math.PI*radio
+        alert("La longitud de la circunferencia de radio "+radio+ " es "+longitud.toFixed(3))
+    }
+}
+
+function espera(){
+    timeout = setTimeout(() => {
+        alert("Han pasado 5 segundos")
+    }, 5000);
 }

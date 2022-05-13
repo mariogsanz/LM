@@ -1,3 +1,4 @@
+// ----- EJERCICIO 2 -----//
 function blanco(){
     document.getElementById("h2").style.backgroundColor = "white"
 }
@@ -32,4 +33,21 @@ function rosa() {
 
 function gris() {
     document.getElementById("h2").style.backgroundColor = "grey"
+}
+
+// ----- EJERCICIO 3 ----- //
+function changeSizeColor(){
+    var caja = document.getElementById("caja2")
+    caja.className = "caja_gris"
+}
+
+function reset(){
+    var caja = document.getElementById("caja2")
+    caja.className = "caja caja2"
+}
+
+// ----- EJERCICIO 4 ----- //
+function circunferencia(){
+    var radio = parseFloat(Number(prompt("Dame el radio:")))
+    alert(radio)
 }

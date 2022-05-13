@@ -1,0 +1,65 @@
+ul{
+  list-style-type: none;
+  padding:0;
+  overflow:hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+
+h1{
+  text-align:center;
+  
+}
+#h2{
+  background-color:blue;
+  width:100%;
+  text-align:center;
+}
+/*Css de las tarjetas----------------------------------------------------------*/
+		
+	    .container2 {
+			display: flex;
+			justify-content: space-around;
+		}
+		div.tarjeta {
+			margin: 15px;
+			border: 1px solid #ccc;
+		}
+		 
+		div.tarjeta:hover {
+			border: 1px solid #777;
+			box-shadow: 0 14px 18px 0 rgba(0,0,0,0.2);
+			
+		}
+					
+		div.descr {
+			padding: 15px;
+			text-align: center;
+			background-color: white;
+      width: 400px;
+		
+			}
+      .boton1{
+      border: none;
+      }
+			div.boton:hover {
+        border: 1px solid #777;
+        box-shadow: 0 14px 18px 0 rgba(0,0,0,0.2);
+        
+      }

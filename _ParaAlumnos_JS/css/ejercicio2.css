@@ -1,0 +1,43 @@
+.header ul{
+    list-style-type: none;
+    padding:0;
+    overflow:hidden;
+    background-color: #333333;
+  }
+
+.header li {
+    float: left;
+  }
+  
+.header li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+.header  li a:hover {
+    background-color: #111111;
+  }
+
+ #h2{
+     background-color:blue;
+     width:100%;
+     text-align:center;
+ }
+
+table{
+    width:100%;
+    height:100px;
+}
+tr{
+    width:100%;
+}
+td{
+    width:9%;
+    text-align:center;
+}
+td a{
+    color:black;
+}

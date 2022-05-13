@@ -1,5 +1,5 @@
 // ----- EJERCICIO 2 -----//
-function blanco(){
+function blanco() {
     document.getElementById("h2").style.backgroundColor = "white"
 }
 
@@ -36,32 +36,32 @@ function gris() {
 }
 
 // ----- EJERCICIO 3 ----- //
-function changeSizeColor(){
+function changeSizeColor() {
     var caja = document.getElementById("caja2")
     caja.className = "caja_gris"
 }
 
-function reset(){
+function reset() {
     var caja = document.getElementById("caja2")
     caja.className = "caja caja2"
 }
 
 // ----- EJERCICIO 4 ----- //
 var timeout
-function circunferencia(){
-    clearTimeout(timeout)
-    var radio = Number(prompt("Dame el radio:"))
-    
-    if (isNaN(radio)){
-        alert("El radio no es un valor numérico")
-    } else {
-        var longitud = 2*Math.PI*radio
-        alert("La longitud de la circunferencia de radio "+radio+ " es "+longitud.toFixed(3))
-    }
-}
-
-function espera(){
+function espera() {
     timeout = setTimeout(() => {
         alert("Han pasado 5 segundos")
     }, 5000);
+}
+
+function circunferencia() {
+    clearTimeout(timeout)
+    var radio = Number(prompt("Dame el radio:"))
+
+    if (isNaN(radio)) {
+        alert("El radio no es un valor numérico")
+    } else {
+        var longitud = 2 * Math.PI * radio
+        alert("La longitud de la circunferencia de radio " + radio + " es " + Math.round(longitud*1000)/1000)
+    }
 }
